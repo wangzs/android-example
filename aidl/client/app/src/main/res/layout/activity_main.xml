@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/bind_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定"/>
+
+    <Button
+        android:id="@+id/unbind_btn"
+        android:layout_toRightOf="@id/bind_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解绑"/>
+
+    <Button
+        android:id="@+id/call_server_btn"
+        android:layout_below="@id/bind_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="调用server端功能"/>
+
+    <Button
+        android:id="@+id/set_listener_btn"
+        android:layout_below="@id/call_server_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置监听函数"/>
+
+</RelativeLayout>
